@@ -44,7 +44,7 @@
     &__column-icons__app {
         flex-direction: column;
         align-items: flex-start;
-    
+
     }
 
     &__social-item {
@@ -57,28 +57,28 @@
     }
 
     &__social-item_fb {
-        background-image: url(../image/facebook.svg);
+        background-image: url(../image/svg/facebook.svg);
         &:hover {
             background-image: url(../image/facebook_hover.svg);
         }
     }
 
     &__social-item_vk {
-        background-image: url(../image/vk.svg);
+        background-image: url(../image/svg/vk.svg);
         &:hover {
             background-image: url(../image/vk_hover.svg);
         }
     }
 
     &__social-item_yt {
-        background-image: url(../image/youtube.svg);
+        background-image: url(../image/svg/youtube.svg);
         &:hover {
             background-image: url(../image/youtube_hover.svg);
         }
     }
 
     &__social-item_ig {
-        background-image: url(../image/instagram.svg);
+        background-image: url(../image/svg/instagram.svg);
         &:hover {
             background-image: url(../image/instagram_hover.svg);
         }
