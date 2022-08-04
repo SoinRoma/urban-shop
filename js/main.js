@@ -81,7 +81,7 @@ const getData = async () => {
     return data.json();
   }
   else {
-    throw new Error(`Данные не были полученыб ошибка ${data.status} ${data.statusText}`);
+    throw new Error(`Данные не были получены ошибка ${data.status} ${data.statusText}`);
   }
 };
 
@@ -136,7 +136,7 @@ try {
     li.innerHTML = `
     <article class="good">
       <a class="good__link-img" href="card-good.html#${id}">
-        <img class="good__img" src="goods-image/${preview}" alt="">
+        <img class="good__img" src="./images/goods-image/${preview}" alt="">
       </a>
       <div class="good__description">
         <p class="good__price">${cost} &#8381;</p>
@@ -191,8 +191,7 @@ try {
 
   const renderCardGood = ([{ id, brand, name, cost, color, sizes, photo }]) => {
     const data = { brand, name, cost, id };
-
-    cardGoodImage.src = `goods-image/${photo}`;
+    cardGoodImage.src = `./images/goods-image/${photo}`;
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
     cardGoodTitle.textContent = name;
